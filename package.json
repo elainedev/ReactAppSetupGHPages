@@ -1,11 +1,14 @@
 {
   "name": "reactapp",
   "version": "1.0.0",
+  "homepage": "https://elainedev.github.io/ReactAppSetupGHPages",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
